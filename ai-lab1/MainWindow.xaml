@@ -5,8 +5,91 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ai_lab1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Height="803.655" Width="1016.188">
+
+
+    <Grid HorizontalAlignment="Left" Width="1008">
+        <Grid.RowDefinitions>
+        </Grid.RowDefinitions>
+        <Button x:Name="btn0" Content="Button" HorizontalAlignment="Left" Margin="860,10,0,0" VerticalAlignment="Top" Width="50" Height="50">
+            <Button.Template>
+                <ControlTemplate>
+                    <Grid x:Name="controlLayout">
+                        <Ellipse x:Name="buttonSurface" Fill="LightBlue" Stroke="Black"></Ellipse>
+                        <Label x:Name="buttonCaption" VerticalAlignment="Center" HorizontalAlignment="Center"
+							   FontWeight="Bold" FontSize="16" Content="OK!"></Label>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <Button x:Name="btnONE" Content="Button" HorizontalAlignment="Left" Margin="767,10,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" Height="20"/>
+        <Canvas x:Name="CanvasMain" HorizontalAlignment="Left" Height="355" VerticalAlignment="Top" Width="408" Background="#FFE4FBF2" RenderTransformOrigin="0.5,0.5" Margin="10,10,0,0">
+            <Canvas.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform />
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Canvas.RenderTransform>
+            <Button x:Name="btn_0" Content="0" Canvas.Left="187" Canvas.Top="153" Width="50" Height="50" Template="{StaticResource ButtonTemplate1}"/>
+            <Button x:Name="btn_1" Content="1" Canvas.Left="265" Canvas.Top="153" Width="50" Height="50" Template="{StaticResource ButtonTemplate1}"/>
+            <Button x:Name="btn_2" Content="2" Canvas.Left="218" Canvas.Top="91" Width="50" Height="50" Template="{StaticResource ButtonTemplate1}"/>
+            <Button x:Name="btn_3" Content="3" Canvas.Left="138" Canvas.Top="91" Width="50" Height="50" Template="{StaticResource ButtonTemplate1}"/>
+            <Button x:Name="btn_4" Content="4" Canvas.Left="105" Canvas.Top="153" Width="50" Height="50" Template="{StaticResource ButtonTemplate1}"/>
+            <Button x:Name="btn_5" Content="5" Canvas.Left="138" Canvas.Top="220" Width="50" Height="50" Template="{StaticResource ButtonTemplate1}"/>
+            <Button x:Name="btn_6" Content="6" Canvas.Left="218" Canvas.Top="220" Width="50" Height="50" Template="{StaticResource ButtonTemplate1}"/>
+            <Button x:Name="btn_7" Content="7" Canvas.Left="339" Canvas.Top="153" Width="50" Height="50" Template="{StaticResource ButtonTemplate1}"/>
+            <Button x:Name="btn_8" Content="8" Canvas.Left="301" Canvas.Top="91" Width="50" Height="50" Template="{StaticResource ButtonTemplate1}"/>
+            <Button x:Name="btn_9" Content="9" Canvas.Left="265" Canvas.Top="27" Width="50" Height="50" Template="{StaticResource ButtonTemplate1}"/>
+            <Button x:Name="btn_10" Content="10" Canvas.Left="187" Canvas.Top="27" Width="50" Height="50" Template="{StaticResource ButtonTemplate1}"/>
+            <Button x:Name="btn_11" Content="11" Canvas.Left="105" Canvas.Top="27" Width="50" Height="50" Template="{StaticResource ButtonTemplate1}"/>
+            <Button x:Name="btn_12" Content="12" Canvas.Left="59" Canvas.Top="91" Width="50" Height="50" Template="{StaticResource ButtonTemplate1}"/>
+            <Button x:Name="btn_13" Content="13" Canvas.Left="28" Canvas.Top="153" Width="50" Height="50" Template="{StaticResource ButtonTemplate1}"/>
+            <Button x:Name="btn_14" Content="14" Canvas.Left="59" Canvas.Top="220" Width="50" Height="50" Template="{StaticResource ButtonTemplate1}"/>
+            <Button x:Name="btn_15" Content="15" Canvas.Left="105" Canvas.Top="287" Width="50" Height="50" Template="{StaticResource ButtonTemplate1}"/>
+            <Button x:Name="btn_16" Content="16" Canvas.Left="187" Canvas.Top="287" Width="50" Height="50" Template="{StaticResource ButtonTemplate1}"/>
+            <Button x:Name="btn_17" Content="17" Canvas.Left="265" Canvas.Top="287" Width="50" Height="50" Template="{StaticResource ButtonTemplate1}"/>
+            <Button x:Name="btn_18" Content="18" Canvas.Left="301" Canvas.Top="220" Width="50" Height="50" Template="{StaticResource ButtonTemplate1}"/>
+        </Canvas>
+        <Button x:Name="btn0_Copy" Content="111" HorizontalAlignment="Center" Margin="930,10,28,713" Width="50" Template="{StaticResource ButtonTemplate}" RenderTransformOrigin="0.544,-0.41"/>
+        <Viewbox HorizontalAlignment="Left" Height="237" Margin="605,175,0,0" VerticalAlignment="Top" Width="305">
+            <Canvas x:Name="CanvasTarget" HorizontalAlignment="Left" Height="355" VerticalAlignment="Top" Width="408" Background="#FFE4FBF2" RenderTransformOrigin="0.5,0.5">
+                <Canvas.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform />
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Canvas.RenderTransform>
+                <Button x:Name="btn_100" Content="0" Canvas.Left="187" Canvas.Top="153" Width="50" Height="50" Template="{StaticResource ButtonTemplate1}"/>
+                <Button x:Name="btn_101" Content="1" Canvas.Left="265" Canvas.Top="153" Width="50" Height="50" Template="{StaticResource ButtonTemplate1}"/>
+                <Button x:Name="btn_102" Content="2" Canvas.Left="218" Canvas.Top="91" Width="50" Height="50" Template="{StaticResource ButtonTemplate1}"/>
+                <Button x:Name="btn_103" Content="3" Canvas.Left="138" Canvas.Top="91" Width="50" Height="50" Template="{StaticResource ButtonTemplate1}"/>
+                <Button x:Name="btn_104" Content="4" Canvas.Left="105" Canvas.Top="153" Width="50" Height="50" Template="{StaticResource ButtonTemplate1}"/>
+                <Button x:Name="btn_105" Content="5" Canvas.Left="138" Canvas.Top="220" Width="50" Height="50" Template="{StaticResource ButtonTemplate1}"/>
+                <Button x:Name="btn_106" Content="6" Canvas.Left="218" Canvas.Top="220" Width="50" Height="50" Template="{StaticResource ButtonTemplate1}"/>
+                <Button x:Name="btn_107" Content="7" Canvas.Left="339" Canvas.Top="153" Width="50" Height="50" Template="{StaticResource ButtonTemplate1}"/>
+                <Button x:Name="btn_108" Content="8" Canvas.Left="301" Canvas.Top="91" Width="50" Height="50" Template="{StaticResource ButtonTemplate1}"/>
+                <Button x:Name="btn_109" Content="9" Canvas.Left="265" Canvas.Top="27" Width="50" Height="50" Template="{StaticResource ButtonTemplate1}"/>
+                <Button x:Name="btn_110" Content="10" Canvas.Left="187" Canvas.Top="27" Width="50" Height="50" Template="{StaticResource ButtonTemplate1}"/>
+                <Button x:Name="btn_111" Content="11" Canvas.Left="105" Canvas.Top="27" Width="50" Height="50" Template="{StaticResource ButtonTemplate1}"/>
+                <Button x:Name="btn_112" Content="12" Canvas.Left="59" Canvas.Top="91" Width="50" Height="50" Template="{StaticResource ButtonTemplate1}"/>
+                <Button x:Name="btn_113" Content="13" Canvas.Left="28" Canvas.Top="153" Width="50" Height="50" Template="{StaticResource ButtonTemplate1}"/>
+                <Button x:Name="btn_114" Content="14" Canvas.Left="59" Canvas.Top="220" Width="50" Height="50" Template="{StaticResource ButtonTemplate1}"/>
+                <Button x:Name="btn_115" Content="15" Canvas.Left="105" Canvas.Top="287" Width="50" Height="50" Template="{StaticResource ButtonTemplate1}"/>
+                <Button x:Name="btn_116" Content="16" Canvas.Left="187" Canvas.Top="287" Width="50" Height="50" Template="{StaticResource ButtonTemplate1}"/>
+                <Button x:Name="btn_117" Content="17" Canvas.Left="265" Canvas.Top="287" Width="50" Height="50" Template="{StaticResource ButtonTemplate1}"/>
+                <Button x:Name="btn_118" Content="18" Canvas.Left="301" Canvas.Top="220" Width="50" Height="50" Template="{StaticResource ButtonTemplate1}"/>
+            </Canvas>
+        </Viewbox>
+        <Button x:Name="btnSearch1" Content="BFS" HorizontalAlignment="Left" Margin="432,11,0,0" VerticalAlignment="Top" Width="130" Click="btnSearch1_Click"/>
+        <Button x:Name="btnSearch2" Content="DFS" HorizontalAlignment="Left" Margin="432,45,0,0" VerticalAlignment="Top" Width="130" Click="btnSearch2_Click"/>
+        <ScrollViewer Margin="10,481,10,10" BorderBrush="#FFE62323">
+            <TextBlock x:Name="log" TextWrapping="Wrap" Background="{DynamicResource {x:Static SystemColors.InfoBrushKey}}"/>
+        </ScrollViewer>
+
     </Grid>
 </Window>

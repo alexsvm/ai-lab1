@@ -4,6 +4,49 @@
              xmlns:local="clr-namespace:ai_lab1"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        
+        <ControlTemplate x:Key="ButtonTemplate" TargetType="Button">
+            <Border BorderBrush="Orange" BorderThickness="3" CornerRadius="2"
+                TextBlock.Foreground="White">
+                <Border.Background>
+                <LinearGradientBrush>
+                    <GradientStopCollection>
+                        <GradientStop Offset="0" Color="LimeGreen"></GradientStop>
+                        <GradientStop Offset="1" Color="LightBlue"></GradientStop>
+                    </GradientStopCollection>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <ContentPresenter RecognizesAccessKey="True">
+                </ContentPresenter>
+            </Border>
+        </ControlTemplate>
+
+        <ControlTemplate x:Key="ButtonTemplate0" TargetType="Button">
+            <Grid x:Name="controlLayout">
+                <Ellipse x:Name="buttonSurface" Fill="LightBlue" Stroke="Black"></Ellipse>
+                <Label x:Name="buttonCaption" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontSize="16">
+                    <ContentPresenter/>
+                </Label>
+            </Grid>
+        </ControlTemplate>
+
+        <ControlTemplate x:Key="ButtonTemplate1" TargetType="Button">
+            <Grid x:Name="controlLayout">
+                <Ellipse x:Name="buttonSurface" Fill="Purple" Stroke="Black"></Ellipse>
+                <Label x:Name="buttonCaption" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontSize="16">
+                    <ContentPresenter/>
+                </Label>
+            </Grid>
+        </ControlTemplate>
+
+        <ControlTemplate x:Key="ButtonTemplateZ" TargetType="Button">
+            <Grid x:Name="controlLayout">
+                <Ellipse x:Name="buttonSurface" Fill="Red" Stroke="Black"></Ellipse>
+                <Label x:Name="buttonCaption" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontSize="16">
+                    <ContentPresenter/>
+                </Label>
+            </Grid>
+        </ControlTemplate>
+
     </Application.Resources>
 </Application>
